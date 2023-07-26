@@ -8,6 +8,7 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
 
+
 #oracle 세팅
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
