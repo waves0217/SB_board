@@ -1,0 +1,24 @@
+server:
+  port: 8090
+
+#jsp 세팅
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+#oracle 세팅
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: waves
+    password: 1234
+    
+#mybatis
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/**/**.xml
+  configuration:
+    cache-enabled: false
+    jdbc-type-for-null: null
+ 
